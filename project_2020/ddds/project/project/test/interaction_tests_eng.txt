@@ -1,0 +1,67 @@
+--- main menu
+S> What would you like to do?
+
+--- languages
+U> what language am I learning
+S> You're learning *
+
+--- friends
+U> how many friends do I have
+S> You have * friends.
+
+--- friends names
+U> what are my friends' names
+S> Your friends' names are *
+
+--- last activity
+U> when was my last activity
+S> *
+
+--- last activity (specified)
+U> when was my last practice
+S> *
+
+--- streak
+U> do I have a streak
+S> You have a streak of *
+
+--- friend language (one-shot)
+U> What language is Saga796697 learning
+S> Saga796697 is learning *
+
+--- friend language (incremental)
+U> what languages are my friends learning
+S> Which friend?
+U> Saga796697
+S> Saga796697 is learning *
+
+--- most progress (incremental)
+U> who made the most progress
+S> This week or this month?
+U> this week
+S> This week * made the most progress with * points. 
+
+--- most progress (one-shot)
+U> who learnt the most this week
+S> This week * made the most progress with * points. 
+
+--- current language
+U> which language did I practice last
+S> You have last practiced *
+
+--- topics
+U> which topics have I learned so far
+S> You have learned about the topics * in *.
+
+--- check word
+U> have I learned the word je already
+S> The word is *.
+
+--- translate
+U> what does je mean
+S> It means *
+
+--- last words
+U> what are my newest words
+S> In your last session you learned *
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ontology name="ProjectOntology">
+    
+    <sort name="lesson_type"/>
+    <sort name="friend" dynamic="true"/>
+    <sort name="languages" dynamic="true"/>
+    <sort name="unit"/>
+    <sort name="lead_friend" dynamic="true"/>
+    <sort name="topics" dynamic="true"/>
+    <sort name="language" dynamic="true"/>
+    <sort name="stat" dynamic ="true"/>
+    <sort name="w" dynamic="true"/>
+    
+    
+    
+    <predicate name="language_learned" sort="languages"/>
+    <predicate name="friends_number" sort="integer"/>
+    <predicate name="friends_names" sort="string"/>
+    <predicate name="last_activity" sort="string"/>
+    <predicate name="streak" sort="integer"/>
+    <predicate name="chosen_lesson_type" sort="lesson_type"/>
+    <predicate name="chosen_friend" sort="friend"/>
+    <predicate name="friend_languages" sort="languages"/>
+    <predicate name="chosen_unit" sort="unit"/>
+    <predicate name="leading_friend" sort="lead_friend"/>
+    <predicate name="topics_learned" sort="topics"/>
+    <predicate name="current_language" sort="language"/>
+    <predicate name="word" sort="w"/>
+    <predicate name="status" sort ="stat"/>
+    <predicate name="translation" sort="w"/>
+    <predicate name="last_words" sort="string"/>
+    
+    
+        
+    <individual name="practice" sort="lesson_type"/>
+    <individual name="lesson" sort="lesson_type"/>
+    <individual name= "Saga796697" sort="friend"/>
+    <individual name= "Andrea613914" sort="friend"/>
+    <individual name= "m2v9M6iB" sort="friend"/>
+    <individual name= "week" sort="unit"/>
+    <individual name= "month" sort="unit"/>
+    <individual name= "es" sort="language"/>
+    <individual name= "sv" sort="language"/>
+    <individual name= "fr" sort="language"/>
+    <individual name= "aller" sort="w"/>
+    <individual name= "je" sort="w"/>
+   
+    
+    
+    
+    
+</ontology>

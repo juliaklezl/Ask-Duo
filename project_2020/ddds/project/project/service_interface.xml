@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service_interface>
+    
+    <query name="language_learned">
+      <parameters>
+      </parameters>
+      <target>
+          <http endpoint="http://http-service/language_learned"/>
+      </target>
+    </query>
+    
+    <query name="friends_number">
+      <parameters>
+      </parameters>
+      <target>
+          <http endpoint="http://http-service/friends_number"/>
+      </target>
+    </query>
+    
+    <query name="friends_names">
+      <parameters>
+      </parameters>
+      <target>
+          <http endpoint="http://http-service/friends_names"/>
+      </target>
+    </query>
+    
+    <query name="last_activity">
+      <parameters>
+          <parameter predicate="chosen_lesson_type" format="grammar_entry" optional="true"/>
+      </parameters>
+      <target>
+          <http endpoint="http://http-service/last_activity"/>
+      </target>
+    </query>
+    
+    <query name="streak">
+      <parameters>
+      </parameters>
+      <target>
+          <http endpoint="http://http-service/streak"/>
+      </target>
+    </query>
+    
+    <query name="friend_languages">
+      <parameters>
+          <parameter predicate="chosen_friend" format="grammar_entry" optional="false"/>
+      </parameters>
+      <target>
+          <http endpoint="http://http-service/friend_languages"/>
+      </target>
+    </query>
+    
+    <query name="leading_friend">
+      <parameters>
+          <parameter predicate="chosen_unit" format="grammar_entry" optional="false"/>
+      </parameters>
+      <target>
+          <http endpoint="http://http-service/leading_friend"/>
+      </target>
+    </query>
+    
+    <query name="topics_learned">
+      <parameters>
+      </parameters>
+      <target>
+          <http endpoint="http://http-service/topics_learned"/>
+      </target>
+    </query>
+    
+    <query name="current_language">
+      <parameters>
+      </parameters>
+      <target>
+          <http endpoint="http://http-service/current_language"/>
+      </target>
+    </query>
+    
+    <query name="status">
+      <parameters>
+          <parameter predicate="word" format="grammar_entry" optional="false"/>
+          <parameter predicate="current_language" format="grammar_entry" optional="false"/>
+      </parameters>
+      <target>
+          <http endpoint="http://http-service/status"/>
+      </target>
+    </query>
+    
+    <query name="translation">
+      <parameters>
+          <parameter predicate="word" format="grammar_entry" optional="false"/>
+      </parameters>
+      <target>
+          <http endpoint="http://http-service/translation"/>
+      </target>
+    </query>
+    
+    <query name="last_words">
+      <parameters>
+      </parameters>
+      <target>
+          <http endpoint="http://http-service/last_words"/>
+      </target>
+    </query>
+</service_interface>

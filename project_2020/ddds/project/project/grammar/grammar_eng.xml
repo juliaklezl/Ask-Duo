@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar>
+    <action name="top">
+      <one-of>
+        <item>main menu</item>
+        <item>top</item>
+        <item>beginning</item>
+        <item>cancel</item>
+        <item>forget it</item>
+        <item>never mind</item>
+        <item>abort</item>
+      </one-of>
+    </action>
+
+    <action name="up">
+      <one-of>
+        <item>up</item>
+        <item>back</item>
+        <item>go back</item>
+      </one-of>
+    </action>
+    
+    
+    <answer speaker="system" predicate="language_learned">You're learning <slot predicate="language_learned"/></answer>
+    <answer speaker="system" predicate="friends_number">You have<slot predicate="friends_number"/> friends</answer>
+    <answer speaker="system" predicate="friends_names">Your friends' names are<slot predicate="friends_names"/></answer>
+    <answer speaker="system" predicate="last_activity"> on <slot predicate="last_activity"/></answer>
+    <answer speaker="system" predicate="streak">You have a streak of<slot predicate="streak"/></answer>
+    <answer speaker="system" predicate="friend_languages"> <slot predicate="chosen_friend"/>is learning <slot predicate="friend_languages"/></answer>
+    <answer speaker="system" predicate="leading_friend"> this  <slot predicate="chosen_unit"/> <slot predicate="leading_friend"/> </answer>
+    <answer speaker="system" predicate="topics_learned"> You have learned about the topics <slot predicate="topics_learned"/></answer>
+    <answer speaker="system" predicate="current_language"> You have last practiced <slot predicate="current_language"/></answer>
+    <answer speaker="system" predicate="status"> you <slot predicate="status"/> learned the word before</answer>
+    <answer speaker="system" predicate="translation"> It means <slot predicate="translation"/></answer>
+    <answer speaker="system" predicate="last_words"> In your last session you learned <slot predicate="last_words"/></answer>
+    
+    <answer speaker="user">this<slot predicate="chosen_unit" type="individual"/>
+    </answer>
+    
+    
+    <question type="wh_question" predicate="chosen_lesson_type" speaker="system">what is the chosen lesson type</question>
+    <question type="wh_question" predicate="chosen_friend" speaker="system">Which friend</question>
+    <question type="wh_question" predicate="chosen_unit" speaker="system">this week or this month</question>
+    <question type="wh_question" predicate="word" speaker="system">which word</question>
+    
+    <question type="wh_question" speaker="user" predicate="language_learned">
+      <one-of>
+        <item>What language am I learning</item>
+        <item>What languages am I learning</item>
+      </one-of>
+    </question>
+    
+    <question type="wh_question" speaker="user" predicate="friends_number">
+      <one-of>
+        <item>How many friends do I have</item>
+        <item>Do I have friends</item>
+      </one-of>
+    </question>
+    
+    <question type="wh_question" speaker="user" predicate="friends_names">
+      <one-of>
+        <item>What are my friends' names</item>
+        <item>What are the names of my friends</item>
+      </one-of>
+    </question>
+    
+    <question type="wh_question" speaker="user" predicate="last_activity">
+      <one-of>
+        <item>When was my last activity</item>
+        <item>When was the last time I studied</item>
+        <item> When was my last <slot predicate="chosen_lesson_type" type="individual"/></item>
+      </one-of>
+    </question>
+    
+    <question type="wh_question" speaker="user" predicate="streak">
+      <one-of>
+        <item>Do I have a streak</item>
+        <item>How long is my streak</item>
+      </one-of>
+    </question>
+    
+    <question type="wh_question" speaker="user" predicate="friend_languages">
+      <one-of>
+        <item>What languages are my friends learning</item>
+        <item>What language is <slot predicate="chosen_friend" type="individual"/> learning</item>
+      </one-of>
+    </question>
+    
+    <question type="wh_question" speaker="user" predicate="leading_friend">
+      <one-of>
+        <item>Who made the most progress</item>
+        <item>Who learnt the most this <slot predicate="chosen_unit" type="individual"/></item>
+      </one-of>
+    </question>
+    
+    <question type="wh_question" speaker="user" predicate="topics_learned">
+      <one-of>
+        <item>Which topics have I learned so far</item>
+        <item>Which topics do I know</item>
+      </one-of>
+    </question>
+    
+    <question type="wh_question" speaker="user" predicate="current_language">
+      <one-of>
+        <item>Which language did I practice last</item>
+        <item>Which did I learn last</item>
+      </one-of>
+    </question>
+    
+    <question type="wh_question" speaker="user" predicate="status">
+      <one-of>
+        <item>Have I learned the word <slot predicate="word" type="individual"/> already</item>
+        <item>Did I learn <slot predicate="word" type="individual"/> yet</item>
+      </one-of>
+    </question>
+    
+    <question type="wh_question" speaker="user" predicate="translation">
+      <one-of>
+        <item>What does the word mean</item>
+        <item>What does <slot predicate="word" type="individual"/> mean</item>
+      </one-of>
+    </question>
+    
+    <question type="wh_question" speaker="user" predicate="last_words">
+      <one-of>
+        <item>What are the last words I learned</item>
+        <item>What are my newest words</item>
+      </one-of>
+    </question>
+    
+    <question type="wh_question" speaker="all" predicate="language_learned">learned languages</question>
+    <question type="wh_question" speaker="all" predicate="friends_number">number of friends</question>
+    <question type="wh_question" speaker="all" predicate="friends_names">names of friends</question>
+    <question type="wh_question" speaker="all" predicate="last_activity">last activity</question>
+    <question type="wh_question" speaker="all" predicate="streak">streak</question>
+    <question type="wh_question" speaker="all" predicate="friend_languages">friend languages</question>
+    <question type="wh_question" speaker="all" predicate="leading_friend">leading friend</question>
+    <question type="wh_question" speaker="all" predicate="topics_learned">topics learned</question>
+    <question type="wh_question" speaker="all" predicate="current_language">current language</question>
+    <question type="wh_question" speaker="all" predicate="status">status</question>
+    <question type="wh_question" speaker="all" predicate="translation">translation</question>
+    <question type="wh_question" speaker="all" predicate="last_words">most recent words</question>
+
+    <individual name="lesson">lesson</individual>
+    <individual name="practice">practice</individual>
+    <individual name="week">week</individual>
+    <individual name="month">month</individual>
+    <individual name="aller">aller</individual>
+    <individual name="je">je</individual>
+    <individual name="sv">
+      <one-of>
+        <item>Swedish</item>
+        <item>sv</item>
+      </one-of>
+    </individual>
+    <individual name="es">
+      <one-of>
+        <item>Spanish</item>
+        <item>es</item>
+      </one-of>
+    </individual>
+    <individual name="fr">
+      <one-of>
+        <item>French</item>
+        <item>fr</item>
+      </one-of>
+    </individual>
+    <individual name="Saga796697">
+      <one-of>
+        <item>Saga796697</item>
+        <item>Saga</item>
+      </one-of>
+    </individual>
+    <individual name="Andrea613914">
+      <one-of>
+        <item>Andrea613914</item>
+        <item>Andrea</item>
+      </one-of>
+    </individual>
+    <individual name="m2v9M6iB">
+      <one-of>
+        <item>m2v9M6iB</item>
+        <item>testuser</item>
+      </one-of>
+    </individual>
+    
+</grammar>

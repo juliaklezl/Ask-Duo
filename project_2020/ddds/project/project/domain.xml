@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<domain name="ProjectDomain" is_super_domain="true">
+  <goal type="perform" action="top">
+    <plan>
+      <forget_all/>
+      <findout type="goal"/>
+    </plan>
+  </goal>
+  
+  
+  <goal type="resolve" question_type="wh_question" predicate="language_learned">
+      <plan>
+        <invoke_service_query type="wh_question" predicate="language_learned"/>
+      </plan>
+    </goal>
+  
+  <goal type="resolve" question_type="wh_question" predicate="friends_number">
+      <plan>
+        <invoke_service_query type="wh_question" predicate="friends_number"/>
+      </plan>
+    </goal>
+  
+  <goal type="resolve" question_type="wh_question" predicate="friends_names">
+      <plan>
+        <invoke_service_query type="wh_question" predicate="friends_names"/>
+      </plan>
+    </goal>
+  
+  <goal type="resolve" question_type="wh_question" predicate="last_activity">
+      <plan>
+        <bind type="wh_question" predicate="chosen_lesson_type"/>
+        <invoke_service_query type="wh_question" predicate="last_activity"/>
+      </plan>
+    </goal>
+  
+  <goal type="resolve" question_type="wh_question" predicate="streak">
+      <plan>
+        <invoke_service_query type="wh_question" predicate="streak"/>
+      </plan>
+    </goal>
+  
+  <goal type="resolve" question_type="wh_question" predicate="friend_languages">
+      <plan>
+        <findout type="wh_question" predicate="chosen_friend"/>
+        <invoke_service_query type="wh_question" predicate="friend_languages"/>
+      </plan>
+    </goal>
+  
+  <goal type="resolve" question_type="wh_question" predicate="leading_friend">
+      <plan>
+        <findout type="wh_question" predicate="chosen_unit"/>
+        <invoke_service_query type="wh_question" predicate="leading_friend"/>
+      </plan>
+    </goal>
+  
+  <goal type="resolve" question_type="wh_question" predicate="topics_learned">
+      <plan>
+        <invoke_service_query type="wh_question" predicate="topics_learned"/>
+      </plan>
+    </goal>
+  
+  <goal type="resolve" question_type="wh_question" predicate="current_language">
+      <plan>
+        <invoke_service_query type="wh_question" predicate="current_language"/>
+      </plan>
+    </goal>
+  
+  <goal type="resolve" question_type="wh_question" predicate="status">
+      <plan>
+          <findout type="wh_question" predicate="current_language"/>
+        <findout type="wh_question" predicate="word"/>
+        <invoke_service_query type="wh_question" predicate="status"/>
+      </plan>
+    </goal>
+  
+  <goal type="resolve" question_type="wh_question" predicate="translation">
+      <plan>
+        <findout type="wh_question" predicate="word"/>
+        <invoke_service_query type="wh_question" predicate="translation"/>
+      </plan>
+    </goal>
+  
+  <goal type="resolve" question_type="wh_question" predicate="last_words">
+      <plan>
+        <invoke_service_query type="wh_question" predicate="last_words"/>
+      </plan>
+    </goal>
+  
+  <parameters predicate="friend_languages">
+    <background predicate="chosen_friend"/>
+  </parameters>
+  <parameters predicate="leading_friend">
+    <background predicate="chosen_unit"/>
+  </parameters>
+  <parameters predicate="topics_learned">
+    <background predicate="current_language"/>
+  </parameters>
+  
+</domain>

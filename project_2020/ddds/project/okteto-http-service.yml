@@ -1,0 +1,6 @@
+name: http-service
+sync:
+  - ./:/okteto/
+workdir: /okteto/
+ 
+command: pip install duolingo-api; gunicorn --workers=3 --bind=0.0.0.0:80 --worker-class=gevent --reload http_service:app
