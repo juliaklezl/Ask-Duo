@@ -9,6 +9,8 @@
         <item>forget it</item>
         <item>never mind</item>
         <item>abort</item>
+        <item>thank you</item>
+        <item>bye</item>
       </one-of>
     </action>
 
@@ -47,6 +49,14 @@
       <one-of>
         <item>What language am I learning</item>
         <item>What languages am I learning</item>
+        <item>Which courses am I taking</item>
+        <item>Which languages am I taking</item>
+        <item>What am I learning</item>
+        <item>What course am I taking</item>
+        <item>What am I practicing on Duolingo</item>
+        <item>What languages am I working on</item>
+        <item>What language did I sign up for</item>
+        <item>What languages am I enrolled in</item>
       </one-of>
     </question>
     
@@ -54,6 +64,14 @@
       <one-of>
         <item>How many friends do I have</item>
         <item>Do I have friends</item>
+        <item>Tell me how many friends I have</item>
+        <item>Tell me my number of friends</item>
+        <item>Number of friends</item>
+        <item>How many friends</item>
+        <item>Do you know how many friends I have</item>
+        <item>Please say how many Duolingo friends I have</item>
+        <item>Do I have many friends</item>
+        <item>Tell me my number of Duolingo friends</item>
       </one-of>
     </question>
     
@@ -61,6 +79,14 @@
       <one-of>
         <item>What are my friends' names</item>
         <item>What are the names of my friends</item>
+        <item>What are my friends called</item>
+        <item>Tell me the names of my friends</item>
+        <item>Tell me my friends' names</item>
+        <item>Tell me what my friends are called</item>
+        <item>Who are my Duolingo friends</item>
+        <item>Who am I friends with</item>
+        <item>Who am I friends with on Duolingo</item>
+        <item>I want to know my friends' names</item>
       </one-of>
     </question>
     
@@ -69,6 +95,13 @@
         <item>When was my last activity</item>
         <item>When was the last time I studied</item>
         <item> When was my last <slot predicate="chosen_lesson_type" type="individual"/></item>
+        <item>When did I study last</item>
+        <item>When was the last time I used Duolingo</item>
+        <item> When did I do the last <slot predicate="chosen_lesson_type" type="individual"/></item>
+        <item>When was my most recent activity</item>
+        <item>Did I work on this recently</item>
+        <item>Did I do a <slot predicate="chosen_lesson_type" type="individual"/> recently</item>
+        <item> When was my most recent <slot predicate="chosen_lesson_type" type="individual"/></item>
       </one-of>
     </question>
     
@@ -76,6 +109,14 @@
       <one-of>
         <item>Do I have a streak</item>
         <item>How long is my streak</item>
+        <item>Tell me my streak</item>
+        <item>How many days is my streak</item>
+        <item>Tell me if I have a streak</item>
+        <item>I want to know my streak</item>
+        <item>I want to know the length of my streak</item>
+        <item>How many days in a row did I practice</item>
+        <item>I want to know if I have a streak</item>
+        <item>Do you know my streak</item>
       </one-of>
     </question>
     
@@ -83,6 +124,14 @@
       <one-of>
         <item>What languages are my friends learning</item>
         <item>What language is <slot predicate="chosen_friend" type="individual"/> learning</item>
+        <item>What languages are my friends studying</item>
+        <item>What is <slot predicate="chosen_friend" type="individual"/> working on</item>
+        <item>What are my friends working on</item>
+        <item>What languages is <slot predicate="chosen_friend" type="individual"/> studying</item>
+        <item>Tell me what my friends are learning</item>
+        <item>What's <slot predicate="chosen_friend" type="individual"/> learning</item>
+        <item>What are my friends doing on Duolingo</item>
+        <item>What's <slot predicate="chosen_friend" type="individual"/> doing on Duolingo</item>
       </one-of>
     </question>
     
@@ -90,6 +139,14 @@
       <one-of>
         <item>Who made the most progress</item>
         <item>Who learnt the most this <slot predicate="chosen_unit" type="individual"/></item>
+        <item>Who is the best</item>
+        <item>Who is the best this <slot predicate="chosen_unit" type="individual"/></item>
+        <item>Who improved most</item>
+        <item>Who worked most on Duolingo this <slot predicate="chosen_unit" type="individual"/></item>
+        <item>Who got the most points</item>
+        <item>Who has the highest number of points this <slot predicate="chosen_unit" type="individual"/></item>
+        <item>Who's the leader</item>
+        <item>Who's on the leaderboard this <slot predicate="chosen_unit" type="individual"/></item>
       </one-of>
     </question>
     
@@ -97,13 +154,29 @@
       <one-of>
         <item>Which topics have I learned so far</item>
         <item>Which topics do I know</item>
+        <item>Tell me my learned topics</item>
+        <item>What are the topics I already know</item>
+        <item>What did I learn about</item>
+        <item>I want to know which topics I did</item>
+        <item>What topics have I done</item>
+        <item>What do I know about</item>
+        <item>learned topics</item>
+        <item>Tell me the topics I've learned</item>
       </one-of>
     </question>
     
     <question type="wh_question" speaker="user" predicate="current_language">
       <one-of>
         <item>Which language did I practice last</item>
-        <item>Which did I learn last</item>
+        <item>Which language did I learn last</item>
+        <item>Which language did I work on last</item>
+        <item>What's the last language I worked on</item>
+        <item>What's the language I practiced last</item>
+        <item>Tell me which language I worked on last</item>
+        <item>Tell me which language I practiced most recently</item>
+        <item>I want to know which language I practiced last</item>
+        <item>I want to know the language I worked on last</item>
+        <item>I want to know what I did last on the app</item>
       </one-of>
     </question>
     
@@ -111,6 +184,14 @@
       <one-of>
         <item>Have I learned the word <slot predicate="word" type="individual"/> already</item>
         <item>Did I learn <slot predicate="word" type="individual"/> yet</item>
+        <item>Do I know the word <slot predicate="word" type="individual"/></item>
+        <item>Should I know <slot predicate="word" type="individual"/></item>
+        <item>Has the word <slot predicate="word" type="individual"/> come up in my lessons</item>
+        <item>Have I ever seen <slot predicate="word" type="individual"/></item>
+        <item>Is the word <slot predicate="word" type="individual"/> new</item>
+        <item>I want to know if I already know the word <slot predicate="word" type="individual"/></item>
+        <item>Should I remember <slot predicate="word" type="individual"/></item>
+        <item>Did I ever see the word <slot predicate="word" type="individual"/> before</item>
       </one-of>
     </question>
     
@@ -118,6 +199,14 @@
       <one-of>
         <item>What does the word mean</item>
         <item>What does <slot predicate="word" type="individual"/> mean</item>
+        <item>Can you translate a word</item>
+        <item>Please translate <slot predicate="word" type="individual"/></item>
+        <item>Can you translate a word for me</item>
+        <item>Translate <slot predicate="word" type="individual"/></item>
+        <item>I need a translation</item>
+        <item>Tell me what the word <slot predicate="word" type="individual"/> means</item>
+        <item>Translate something for me</item>
+        <item>Give me a translation for the word <slot predicate="word" type="individual"/></item>
       </one-of>
     </question>
     
@@ -125,6 +214,14 @@
       <one-of>
         <item>What are the last words I learned</item>
         <item>What are my newest words</item>
+        <item>Which words did I learn recently</item>
+        <item>Which words did I learn last</item>
+        <item>Tell me the latest words</item>
+        <item>Tell me the words in my last lesson</item>
+        <item>Tell me which words I learned recently</item>
+        <item>I want to know my newest words</item>
+        <item>I want to know the words I learned last</item>
+        <item>Give me the most recent words, please</item>
       </one-of>
     </question>
     
@@ -145,8 +242,29 @@
     <individual name="practice">practice</individual>
     <individual name="week">week</individual>
     <individual name="month">month</individual>
+    
     <individual name="aller">aller</individual>
     <individual name="je">je</individual>
+    <individual name="regarde">regarde</individual>
+    <individual name="tele">tele</individual>
+    <individual name="lundi">lundi</individual>
+    <individual name="soirs">soirs</individual>
+    <individual name="joue">joue</individual>
+    <individual name="jour">jour</individual>
+    <individual name="mardi">mardi</individual>
+    <individual name="chaque">chaque</individual>
+    
+    <individual name="godis">godis</individual>
+    <individual name="hej">hej</individual>
+    <individual name="kalas">kalas</individual>
+    <individual name="present">present</individual>
+    <individual name="grattis">grattis</individual>
+    <individual name="jul">jul</individual>
+    <individual name="inbjudan">inbjudan</individual>
+    <individual name="fyrverkeri">fyrverkeri</individual>
+    <individual name="fira">fira</individual>
+    <individual name="dag">dag</individual>
+    
     <individual name="sv">
       <one-of>
         <item>Swedish</item>

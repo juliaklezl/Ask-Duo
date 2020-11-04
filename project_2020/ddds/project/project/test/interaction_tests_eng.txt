@@ -26,7 +26,7 @@ U> do I have a streak
 S> You have a streak of *
 
 --- friend language (one-shot)
-U> What language is Saga796697 learning
+U> What language is Saga learning
 S> Saga796697 is learning *
 
 --- friend language (incremental)
@@ -42,7 +42,7 @@ U> this week
 S> This week * made the most progress with * points. 
 
 --- most progress (one-shot)
-U> who learnt the most this week
+U> who's on the leaderboard this week
 S> This week * made the most progress with * points. 
 
 --- current language
@@ -55,10 +55,10 @@ S> You have learned about the topics * in *.
 
 --- check word
 U> have I learned the word je already
-S> The word is *.
+S> You * the word before.
 
 --- translate
-U> what does je mean
+U> what does hej mean
 S> It means *
 
 --- last words

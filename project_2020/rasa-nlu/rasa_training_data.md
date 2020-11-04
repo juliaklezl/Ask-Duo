@@ -1,0 +1,758 @@
+## intent:project:question::language_learned
+- What language am I learning
+- What languages am I learning
+- Which courses am I taking
+- Which languages am I taking
+- What am I learning
+- What course am I taking
+- What am I practicing on Duolingo
+- What languages am I working on
+- What language did I sign up for
+- What languages am I enrolled in
+
+## intent:project:question::friends_number
+- How many friends do I have
+- Do I have friends
+- Tell me how many friends I have
+- Tell me my number of friends
+- Number of friends
+- How many friends
+- Do you know how many friends I have
+- Please say how many Duolingo friends I have
+- Do I have many friends
+- Tell me my number of Duolingo friends
+
+## intent:project:question::friends_names
+- What are my friends' names
+- What are the names of my friends
+- What are my friends called
+- Tell me the names of my friends
+- Tell me my friends' names
+- Tell me what my friends are called
+- Who are my Duolingo friends
+- Who am I friends with
+- Who am I friends with on Duolingo
+- I want to know my friends' names
+
+## intent:project:question::last_activity
+- When was my last activity
+- When was the last time I studied
+- When was my last [practice]{"entity": "project.sort.lesson_type", "role": "project.predicate.chosen_lesson_type"}
+- When was my last [lesson]{"entity": "project.sort.lesson_type", "role": "project.predicate.chosen_lesson_type"}
+- When did I study last
+- When was the last time I used Duolingo
+- When did I do the last [practice]{"entity": "project.sort.lesson_type", "role": "project.predicate.chosen_lesson_type"}
+- When did I do the last [lesson]{"entity": "project.sort.lesson_type", "role": "project.predicate.chosen_lesson_type"}
+- When was my most recent activity
+- Did I work on this recently
+- Did I do a [practice]{"entity": "project.sort.lesson_type", "role": "project.predicate.chosen_lesson_type"} recently
+- Did I do a [lesson]{"entity": "project.sort.lesson_type", "role": "project.predicate.chosen_lesson_type"} recently
+- When was my most recent [practice]{"entity": "project.sort.lesson_type", "role": "project.predicate.chosen_lesson_type"}
+- When was my most recent [lesson]{"entity": "project.sort.lesson_type", "role": "project.predicate.chosen_lesson_type"}
+
+## intent:project:question::streak
+- Do I have a streak
+- How long is my streak
+- Tell me my streak
+- How many days is my streak
+- Tell me if I have a streak
+- I want to know my streak
+- I want to know the length of my streak
+- How many days in a row did I practice
+- I want to know if I have a streak
+- Do you know my streak
+
+## intent:project:question::friend_languages
+- What languages are my friends learning
+- What language is [Saga796697]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} learning
+- What language is [Saga]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} learning
+- What language is [Andrea613914]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} learning
+- What language is [Andrea]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} learning
+- What language is [m2v9M6iB]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} learning
+- What language is [testuser]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} learning
+- What languages are my friends studying
+- What is [Saga796697]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} working on
+- What is [Saga]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} working on
+- What is [Andrea613914]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} working on
+- What is [Andrea]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} working on
+- What is [m2v9M6iB]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} working on
+- What is [testuser]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} working on
+- What are my friends working on
+- What languages is [Saga796697]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} studying
+- What languages is [Saga]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} studying
+- What languages is [Andrea613914]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} studying
+- What languages is [Andrea]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} studying
+- What languages is [m2v9M6iB]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} studying
+- What languages is [testuser]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} studying
+- Tell me what my friends are learning
+- What's [Saga796697]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} learning
+- What's [Saga]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} learning
+- What's [Andrea613914]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} learning
+- What's [Andrea]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} learning
+- What's [m2v9M6iB]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} learning
+- What's [testuser]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} learning
+- What are my friends doing on Duolingo
+- What's [Saga796697]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} doing on Duolingo
+- What's [Saga]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} doing on Duolingo
+- What's [Andrea613914]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} doing on Duolingo
+- What's [Andrea]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} doing on Duolingo
+- What's [m2v9M6iB]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} doing on Duolingo
+- What's [testuser]{"entity": "project.sort.friend", "role": "project.predicate.chosen_friend"} doing on Duolingo
+
+## intent:project:question::leading_friend
+- Who made the most progress
+- Who learnt the most this [week]{"entity": "project.sort.unit", "role": "project.predicate.chosen_unit"}
+- Who learnt the most this [month]{"entity": "project.sort.unit", "role": "project.predicate.chosen_unit"}
+- Who is the best
+- Who is the best this [week]{"entity": "project.sort.unit", "role": "project.predicate.chosen_unit"}
+- Who is the best this [month]{"entity": "project.sort.unit", "role": "project.predicate.chosen_unit"}
+- Who improved most
+- Who worked most on Duolingo this [week]{"entity": "project.sort.unit", "role": "project.predicate.chosen_unit"}
+- Who worked most on Duolingo this [month]{"entity": "project.sort.unit", "role": "project.predicate.chosen_unit"}
+- Who got the most points
+- Who has the highest number of points this [week]{"entity": "project.sort.unit", "role": "project.predicate.chosen_unit"}
+- Who has the highest number of points this [month]{"entity": "project.sort.unit", "role": "project.predicate.chosen_unit"}
+- Who's the leader
+- Who's on the leaderboard this [week]{"entity": "project.sort.unit", "role": "project.predicate.chosen_unit"}
+- Who's on the leaderboard this [month]{"entity": "project.sort.unit", "role": "project.predicate.chosen_unit"}
+
+## intent:project:question::topics_learned
+- Which topics have I learned so far
+- Which topics do I know
+- Tell me my learned topics
+- What are the topics I already know
+- What did I learn about
+- I want to know which topics I did
+- What topics have I done
+- What do I know about
+- learned topics
+- Tell me the topics I've learned
+
+## intent:project:question::current_language
+- Which language did I practice last
+- Which language did I learn last
+- Which language did I work on last
+- What's the last language I worked on
+- What's the language I practiced last
+- Tell me which language I worked on last
+- Tell me which language I practiced most recently
+- I want to know which language I practiced last
+- I want to know the language I worked on last
+- I want to know what I did last on the app
+
+## intent:project:question::status
+- Have I learned the word [aller]{"entity": "project.sort.w", "role": "project.predicate.word"} already
+- Have I learned the word [je]{"entity": "project.sort.w", "role": "project.predicate.word"} already
+- Have I learned the word [regarde]{"entity": "project.sort.w", "role": "project.predicate.word"} already
+- Have I learned the word [tele]{"entity": "project.sort.w", "role": "project.predicate.word"} already
+- Have I learned the word [lundi]{"entity": "project.sort.w", "role": "project.predicate.word"} already
+- Have I learned the word [soirs]{"entity": "project.sort.w", "role": "project.predicate.word"} already
+- Have I learned the word [joue]{"entity": "project.sort.w", "role": "project.predicate.word"} already
+- Have I learned the word [jour]{"entity": "project.sort.w", "role": "project.predicate.word"} already
+- Have I learned the word [chaque]{"entity": "project.sort.w", "role": "project.predicate.word"} already
+- Have I learned the word [mardi]{"entity": "project.sort.w", "role": "project.predicate.word"} already
+- Have I learned the word [godis]{"entity": "project.sort.w", "role": "project.predicate.word"} already
+- Have I learned the word [hej]{"entity": "project.sort.w", "role": "project.predicate.word"} already
+- Have I learned the word [kalas]{"entity": "project.sort.w", "role": "project.predicate.word"} already
+- Have I learned the word [present]{"entity": "project.sort.w", "role": "project.predicate.word"} already
+- Have I learned the word [grattis]{"entity": "project.sort.w", "role": "project.predicate.word"} already
+- Have I learned the word [jul]{"entity": "project.sort.w", "role": "project.predicate.word"} already
+- Have I learned the word [inbjudan]{"entity": "project.sort.w", "role": "project.predicate.word"} already
+- Have I learned the word [fyrverkeri]{"entity": "project.sort.w", "role": "project.predicate.word"} already
+- Have I learned the word [fira]{"entity": "project.sort.w", "role": "project.predicate.word"} already
+- Have I learned the word [dag]{"entity": "project.sort.w", "role": "project.predicate.word"} already
+- Did I learn [aller]{"entity": "project.sort.w", "role": "project.predicate.word"} yet
+- Did I learn [je]{"entity": "project.sort.w", "role": "project.predicate.word"} yet
+- Did I learn [regarde]{"entity": "project.sort.w", "role": "project.predicate.word"} yet
+- Did I learn [tele]{"entity": "project.sort.w", "role": "project.predicate.word"} yet
+- Did I learn [lundi]{"entity": "project.sort.w", "role": "project.predicate.word"} yet
+- Did I learn [soirs]{"entity": "project.sort.w", "role": "project.predicate.word"} yet
+- Did I learn [joue]{"entity": "project.sort.w", "role": "project.predicate.word"} yet
+- Did I learn [jour]{"entity": "project.sort.w", "role": "project.predicate.word"} yet
+- Did I learn [chaque]{"entity": "project.sort.w", "role": "project.predicate.word"} yet
+- Did I learn [mardi]{"entity": "project.sort.w", "role": "project.predicate.word"} yet
+- Did I learn [godis]{"entity": "project.sort.w", "role": "project.predicate.word"} yet
+- Did I learn [hej]{"entity": "project.sort.w", "role": "project.predicate.word"} yet
+- Did I learn [kalas]{"entity": "project.sort.w", "role": "project.predicate.word"} yet
+- Did I learn [present]{"entity": "project.sort.w", "role": "project.predicate.word"} yet
+- Did I learn [grattis]{"entity": "project.sort.w", "role": "project.predicate.word"} yet
+- Did I learn [jul]{"entity": "project.sort.w", "role": "project.predicate.word"} yet
+- Did I learn [inbjudan]{"entity": "project.sort.w", "role": "project.predicate.word"} yet
+- Did I learn [fyrverkeri]{"entity": "project.sort.w", "role": "project.predicate.word"} yet
+- Did I learn [fira]{"entity": "project.sort.w", "role": "project.predicate.word"} yet
+- Did I learn [dag]{"entity": "project.sort.w", "role": "project.predicate.word"} yet
+- Do I know the word [aller]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Do I know the word [je]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Do I know the word [regarde]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Do I know the word [tele]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Do I know the word [lundi]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Do I know the word [soirs]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Do I know the word [joue]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Do I know the word [jour]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Do I know the word [chaque]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Do I know the word [mardi]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Do I know the word [godis]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Do I know the word [hej]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Do I know the word [kalas]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Do I know the word [present]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Do I know the word [grattis]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Do I know the word [jul]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Do I know the word [inbjudan]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Do I know the word [fyrverkeri]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Do I know the word [fira]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Do I know the word [dag]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I know [aller]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I know [je]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I know [regarde]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I know [tele]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I know [lundi]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I know [soirs]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I know [joue]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I know [jour]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I know [chaque]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I know [mardi]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I know [godis]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I know [hej]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I know [kalas]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I know [present]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I know [grattis]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I know [jul]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I know [inbjudan]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I know [fyrverkeri]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I know [fira]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I know [dag]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Has the word [aller]{"entity": "project.sort.w", "role": "project.predicate.word"} come up in my lessons
+- Has the word [je]{"entity": "project.sort.w", "role": "project.predicate.word"} come up in my lessons
+- Has the word [regarde]{"entity": "project.sort.w", "role": "project.predicate.word"} come up in my lessons
+- Has the word [tele]{"entity": "project.sort.w", "role": "project.predicate.word"} come up in my lessons
+- Has the word [lundi]{"entity": "project.sort.w", "role": "project.predicate.word"} come up in my lessons
+- Has the word [soirs]{"entity": "project.sort.w", "role": "project.predicate.word"} come up in my lessons
+- Has the word [joue]{"entity": "project.sort.w", "role": "project.predicate.word"} come up in my lessons
+- Has the word [jour]{"entity": "project.sort.w", "role": "project.predicate.word"} come up in my lessons
+- Has the word [chaque]{"entity": "project.sort.w", "role": "project.predicate.word"} come up in my lessons
+- Has the word [mardi]{"entity": "project.sort.w", "role": "project.predicate.word"} come up in my lessons
+- Has the word [godis]{"entity": "project.sort.w", "role": "project.predicate.word"} come up in my lessons
+- Has the word [hej]{"entity": "project.sort.w", "role": "project.predicate.word"} come up in my lessons
+- Has the word [kalas]{"entity": "project.sort.w", "role": "project.predicate.word"} come up in my lessons
+- Has the word [present]{"entity": "project.sort.w", "role": "project.predicate.word"} come up in my lessons
+- Has the word [grattis]{"entity": "project.sort.w", "role": "project.predicate.word"} come up in my lessons
+- Has the word [jul]{"entity": "project.sort.w", "role": "project.predicate.word"} come up in my lessons
+- Has the word [inbjudan]{"entity": "project.sort.w", "role": "project.predicate.word"} come up in my lessons
+- Has the word [fyrverkeri]{"entity": "project.sort.w", "role": "project.predicate.word"} come up in my lessons
+- Has the word [fira]{"entity": "project.sort.w", "role": "project.predicate.word"} come up in my lessons
+- Has the word [dag]{"entity": "project.sort.w", "role": "project.predicate.word"} come up in my lessons
+- Have I ever seen [aller]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Have I ever seen [je]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Have I ever seen [regarde]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Have I ever seen [tele]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Have I ever seen [lundi]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Have I ever seen [soirs]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Have I ever seen [joue]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Have I ever seen [jour]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Have I ever seen [chaque]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Have I ever seen [mardi]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Have I ever seen [godis]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Have I ever seen [hej]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Have I ever seen [kalas]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Have I ever seen [present]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Have I ever seen [grattis]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Have I ever seen [jul]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Have I ever seen [inbjudan]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Have I ever seen [fyrverkeri]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Have I ever seen [fira]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Have I ever seen [dag]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Is the word [aller]{"entity": "project.sort.w", "role": "project.predicate.word"} new
+- Is the word [je]{"entity": "project.sort.w", "role": "project.predicate.word"} new
+- Is the word [regarde]{"entity": "project.sort.w", "role": "project.predicate.word"} new
+- Is the word [tele]{"entity": "project.sort.w", "role": "project.predicate.word"} new
+- Is the word [lundi]{"entity": "project.sort.w", "role": "project.predicate.word"} new
+- Is the word [soirs]{"entity": "project.sort.w", "role": "project.predicate.word"} new
+- Is the word [joue]{"entity": "project.sort.w", "role": "project.predicate.word"} new
+- Is the word [jour]{"entity": "project.sort.w", "role": "project.predicate.word"} new
+- Is the word [chaque]{"entity": "project.sort.w", "role": "project.predicate.word"} new
+- Is the word [mardi]{"entity": "project.sort.w", "role": "project.predicate.word"} new
+- Is the word [godis]{"entity": "project.sort.w", "role": "project.predicate.word"} new
+- Is the word [hej]{"entity": "project.sort.w", "role": "project.predicate.word"} new
+- Is the word [kalas]{"entity": "project.sort.w", "role": "project.predicate.word"} new
+- Is the word [present]{"entity": "project.sort.w", "role": "project.predicate.word"} new
+- Is the word [grattis]{"entity": "project.sort.w", "role": "project.predicate.word"} new
+- Is the word [jul]{"entity": "project.sort.w", "role": "project.predicate.word"} new
+- Is the word [inbjudan]{"entity": "project.sort.w", "role": "project.predicate.word"} new
+- Is the word [fyrverkeri]{"entity": "project.sort.w", "role": "project.predicate.word"} new
+- Is the word [fira]{"entity": "project.sort.w", "role": "project.predicate.word"} new
+- Is the word [dag]{"entity": "project.sort.w", "role": "project.predicate.word"} new
+- I want to know if I already know the word [aller]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- I want to know if I already know the word [je]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- I want to know if I already know the word [regarde]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- I want to know if I already know the word [tele]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- I want to know if I already know the word [lundi]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- I want to know if I already know the word [soirs]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- I want to know if I already know the word [joue]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- I want to know if I already know the word [jour]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- I want to know if I already know the word [chaque]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- I want to know if I already know the word [mardi]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- I want to know if I already know the word [godis]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- I want to know if I already know the word [hej]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- I want to know if I already know the word [kalas]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- I want to know if I already know the word [present]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- I want to know if I already know the word [grattis]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- I want to know if I already know the word [jul]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- I want to know if I already know the word [inbjudan]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- I want to know if I already know the word [fyrverkeri]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- I want to know if I already know the word [fira]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- I want to know if I already know the word [dag]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I remember [aller]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I remember [je]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I remember [regarde]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I remember [tele]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I remember [lundi]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I remember [soirs]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I remember [joue]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I remember [jour]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I remember [chaque]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I remember [mardi]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I remember [godis]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I remember [hej]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I remember [kalas]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I remember [present]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I remember [grattis]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I remember [jul]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I remember [inbjudan]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I remember [fyrverkeri]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I remember [fira]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Should I remember [dag]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Did I ever see the word [aller]{"entity": "project.sort.w", "role": "project.predicate.word"} before
+- Did I ever see the word [je]{"entity": "project.sort.w", "role": "project.predicate.word"} before
+- Did I ever see the word [regarde]{"entity": "project.sort.w", "role": "project.predicate.word"} before
+- Did I ever see the word [tele]{"entity": "project.sort.w", "role": "project.predicate.word"} before
+- Did I ever see the word [lundi]{"entity": "project.sort.w", "role": "project.predicate.word"} before
+- Did I ever see the word [soirs]{"entity": "project.sort.w", "role": "project.predicate.word"} before
+- Did I ever see the word [joue]{"entity": "project.sort.w", "role": "project.predicate.word"} before
+- Did I ever see the word [jour]{"entity": "project.sort.w", "role": "project.predicate.word"} before
+- Did I ever see the word [chaque]{"entity": "project.sort.w", "role": "project.predicate.word"} before
+- Did I ever see the word [mardi]{"entity": "project.sort.w", "role": "project.predicate.word"} before
+- Did I ever see the word [godis]{"entity": "project.sort.w", "role": "project.predicate.word"} before
+- Did I ever see the word [hej]{"entity": "project.sort.w", "role": "project.predicate.word"} before
+- Did I ever see the word [kalas]{"entity": "project.sort.w", "role": "project.predicate.word"} before
+- Did I ever see the word [present]{"entity": "project.sort.w", "role": "project.predicate.word"} before
+- Did I ever see the word [grattis]{"entity": "project.sort.w", "role": "project.predicate.word"} before
+- Did I ever see the word [jul]{"entity": "project.sort.w", "role": "project.predicate.word"} before
+- Did I ever see the word [inbjudan]{"entity": "project.sort.w", "role": "project.predicate.word"} before
+- Did I ever see the word [fyrverkeri]{"entity": "project.sort.w", "role": "project.predicate.word"} before
+- Did I ever see the word [fira]{"entity": "project.sort.w", "role": "project.predicate.word"} before
+- Did I ever see the word [dag]{"entity": "project.sort.w", "role": "project.predicate.word"} before
+
+## intent:project:question::translation
+- What does the word mean
+- What does [aller]{"entity": "project.sort.w", "role": "project.predicate.word"} mean
+- What does [je]{"entity": "project.sort.w", "role": "project.predicate.word"} mean
+- What does [regarde]{"entity": "project.sort.w", "role": "project.predicate.word"} mean
+- What does [tele]{"entity": "project.sort.w", "role": "project.predicate.word"} mean
+- What does [lundi]{"entity": "project.sort.w", "role": "project.predicate.word"} mean
+- What does [soirs]{"entity": "project.sort.w", "role": "project.predicate.word"} mean
+- What does [joue]{"entity": "project.sort.w", "role": "project.predicate.word"} mean
+- What does [jour]{"entity": "project.sort.w", "role": "project.predicate.word"} mean
+- What does [chaque]{"entity": "project.sort.w", "role": "project.predicate.word"} mean
+- What does [mardi]{"entity": "project.sort.w", "role": "project.predicate.word"} mean
+- What does [godis]{"entity": "project.sort.w", "role": "project.predicate.word"} mean
+- What does [hej]{"entity": "project.sort.w", "role": "project.predicate.word"} mean
+- What does [kalas]{"entity": "project.sort.w", "role": "project.predicate.word"} mean
+- What does [present]{"entity": "project.sort.w", "role": "project.predicate.word"} mean
+- What does [grattis]{"entity": "project.sort.w", "role": "project.predicate.word"} mean
+- What does [jul]{"entity": "project.sort.w", "role": "project.predicate.word"} mean
+- What does [inbjudan]{"entity": "project.sort.w", "role": "project.predicate.word"} mean
+- What does [fyrverkeri]{"entity": "project.sort.w", "role": "project.predicate.word"} mean
+- What does [fira]{"entity": "project.sort.w", "role": "project.predicate.word"} mean
+- What does [dag]{"entity": "project.sort.w", "role": "project.predicate.word"} mean
+- Can you translate a word
+- Please translate [aller]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Please translate [je]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Please translate [regarde]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Please translate [tele]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Please translate [lundi]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Please translate [soirs]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Please translate [joue]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Please translate [jour]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Please translate [chaque]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Please translate [mardi]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Please translate [godis]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Please translate [hej]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Please translate [kalas]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Please translate [present]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Please translate [grattis]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Please translate [jul]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Please translate [inbjudan]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Please translate [fyrverkeri]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Please translate [fira]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Please translate [dag]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Can you translate a word for me
+- Translate [aller]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Translate [je]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Translate [regarde]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Translate [tele]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Translate [lundi]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Translate [soirs]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Translate [joue]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Translate [jour]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Translate [chaque]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Translate [mardi]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Translate [godis]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Translate [hej]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Translate [kalas]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Translate [present]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Translate [grattis]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Translate [jul]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Translate [inbjudan]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Translate [fyrverkeri]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Translate [fira]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Translate [dag]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- I need a translation
+- Tell me what the word [aller]{"entity": "project.sort.w", "role": "project.predicate.word"} means
+- Tell me what the word [je]{"entity": "project.sort.w", "role": "project.predicate.word"} means
+- Tell me what the word [regarde]{"entity": "project.sort.w", "role": "project.predicate.word"} means
+- Tell me what the word [tele]{"entity": "project.sort.w", "role": "project.predicate.word"} means
+- Tell me what the word [lundi]{"entity": "project.sort.w", "role": "project.predicate.word"} means
+- Tell me what the word [soirs]{"entity": "project.sort.w", "role": "project.predicate.word"} means
+- Tell me what the word [joue]{"entity": "project.sort.w", "role": "project.predicate.word"} means
+- Tell me what the word [jour]{"entity": "project.sort.w", "role": "project.predicate.word"} means
+- Tell me what the word [chaque]{"entity": "project.sort.w", "role": "project.predicate.word"} means
+- Tell me what the word [mardi]{"entity": "project.sort.w", "role": "project.predicate.word"} means
+- Tell me what the word [godis]{"entity": "project.sort.w", "role": "project.predicate.word"} means
+- Tell me what the word [hej]{"entity": "project.sort.w", "role": "project.predicate.word"} means
+- Tell me what the word [kalas]{"entity": "project.sort.w", "role": "project.predicate.word"} means
+- Tell me what the word [present]{"entity": "project.sort.w", "role": "project.predicate.word"} means
+- Tell me what the word [grattis]{"entity": "project.sort.w", "role": "project.predicate.word"} means
+- Tell me what the word [jul]{"entity": "project.sort.w", "role": "project.predicate.word"} means
+- Tell me what the word [inbjudan]{"entity": "project.sort.w", "role": "project.predicate.word"} means
+- Tell me what the word [fyrverkeri]{"entity": "project.sort.w", "role": "project.predicate.word"} means
+- Tell me what the word [fira]{"entity": "project.sort.w", "role": "project.predicate.word"} means
+- Tell me what the word [dag]{"entity": "project.sort.w", "role": "project.predicate.word"} means
+- Translate something for me
+- Give me a translation for the word [aller]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Give me a translation for the word [je]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Give me a translation for the word [regarde]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Give me a translation for the word [tele]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Give me a translation for the word [lundi]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Give me a translation for the word [soirs]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Give me a translation for the word [joue]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Give me a translation for the word [jour]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Give me a translation for the word [chaque]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Give me a translation for the word [mardi]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Give me a translation for the word [godis]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Give me a translation for the word [hej]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Give me a translation for the word [kalas]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Give me a translation for the word [present]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Give me a translation for the word [grattis]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Give me a translation for the word [jul]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Give me a translation for the word [inbjudan]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Give me a translation for the word [fyrverkeri]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Give me a translation for the word [fira]{"entity": "project.sort.w", "role": "project.predicate.word"}
+- Give me a translation for the word [dag]{"entity": "project.sort.w", "role": "project.predicate.word"}
+
+## intent:project:question::last_words
+- What are the last words I learned
+- What are my newest words
+- Which words did I learn recently
+- Which words did I learn last
+- Tell me the latest words
+- Tell me the words in my last lesson
+- Tell me which words I learned recently
+- I want to know my newest words
+- I want to know the words I learned last
+- Give me the most recent words, please
+
+## intent:project:answer
+- [Saga796697](project.sort.friend)
+- [Saga](project.sort.friend)
+- [Andrea613914](project.sort.friend)
+- [Andrea](project.sort.friend)
+- [m2v9M6iB](project.sort.friend)
+- [testuser](project.sort.friend)
+- [practice](project.sort.lesson_type)
+- [lesson](project.sort.lesson_type)
+- [week](project.sort.unit)
+- [month](project.sort.unit)
+- [Spanish](project.sort.language)
+- [es](project.sort.language)
+- [Swedish](project.sort.language)
+- [sv](project.sort.language)
+- [French](project.sort.language)
+- [fr](project.sort.language)
+- [single](project.sort.string)
+- [double word](project.sort.string)
+- [three in one](project.sort.string)
+- [hey make it four](project.sort.string)
+- [the more the merrier five](project.sort.string)
+- [calm down and count to six](project.sort.string)
+- [bring them through to the jolly seven](project.sort.string)
+- [noone counts toes like an eight toed guy](project.sort.string)
+- [it matters to make sense for nine of us](project.sort.string)
+- [would you bring ten or none to a desert island](project.sort.string)
+- 0
+- 99
+- 1224
+- a hundred and fifty seven
+- three
+- two thousand fifteen
+- [aller](project.sort.w)
+- [je](project.sort.w)
+- [regarde](project.sort.w)
+- [tele](project.sort.w)
+- [lundi](project.sort.w)
+- [soirs](project.sort.w)
+- [joue](project.sort.w)
+- [jour](project.sort.w)
+- [chaque](project.sort.w)
+- [mardi](project.sort.w)
+- [godis](project.sort.w)
+- [hej](project.sort.w)
+- [kalas](project.sort.w)
+- [present](project.sort.w)
+- [grattis](project.sort.w)
+- [jul](project.sort.w)
+- [inbjudan](project.sort.w)
+- [fyrverkeri](project.sort.w)
+- [fira](project.sort.w)
+- [dag](project.sort.w)
+- this[week]{"entity": "project.sort.unit", "role": "project.predicate.chosen_unit"}
+- this[month]{"entity": "project.sort.unit", "role": "project.predicate.chosen_unit"}
+
+## intent:project:answer_negation
+- not [Saga796697](project.sort.friend)
+- not [Saga](project.sort.friend)
+- not [Andrea613914](project.sort.friend)
+- not [Andrea](project.sort.friend)
+- not [m2v9M6iB](project.sort.friend)
+- not [testuser](project.sort.friend)
+- not [practice](project.sort.lesson_type)
+- not [lesson](project.sort.lesson_type)
+- not [week](project.sort.unit)
+- not [month](project.sort.unit)
+- not [Spanish](project.sort.language)
+- not [es](project.sort.language)
+- not [Swedish](project.sort.language)
+- not [sv](project.sort.language)
+- not [French](project.sort.language)
+- not [fr](project.sort.language)
+- not 0
+- not 99
+- not 1224
+- not a hundred and fifty seven
+- not three
+- not two thousand fifteen
+- not [aller](project.sort.w)
+- not [je](project.sort.w)
+- not [regarde](project.sort.w)
+- not [tele](project.sort.w)
+- not [lundi](project.sort.w)
+- not [soirs](project.sort.w)
+- not [joue](project.sort.w)
+- not [jour](project.sort.w)
+- not [chaque](project.sort.w)
+- not [mardi](project.sort.w)
+- not [godis](project.sort.w)
+- not [hej](project.sort.w)
+- not [kalas](project.sort.w)
+- not [present](project.sort.w)
+- not [grattis](project.sort.w)
+- not [jul](project.sort.w)
+- not [inbjudan](project.sort.w)
+- not [fyrverkeri](project.sort.w)
+- not [fira](project.sort.w)
+- not [dag](project.sort.w)
+
+## intent:NEGATIVE
+- aboard
+- about
+- above
+- across
+- after
+- against
+- along
+- among
+- as
+- at
+- on
+- atop
+- before
+- behind
+- below
+- beneath
+- beside
+- between
+- beyond
+- but
+- by
+- come
+- down
+- during
+- except
+- for
+- from
+- in
+- inside
+- into
+- less
+- like
+- near
+- of
+- off
+- on
+- onto
+- opposite
+- out
+- outside
+- over
+- past
+- save
+- short
+- since
+- than
+- then
+- through
+- throughout
+- to
+- toward
+- under
+- underneath
+- unlike
+- until
+- up
+- upon
+- with
+- within
+- without
+- worth
+- is
+- it
+- the
+- a
+- am
+- are
+- them
+- this
+- that
+- I
+- you
+- he
+- she
+- they
+- them
+- his
+- her
+- my
+- mine
+- their
+- your
+- us
+- our
+- how
+- how's
+- how is
+- how's the
+- how is the
+- when
+- when's
+- when is
+- when is the
+- when's the
+- what
+- what is
+- what's
+- what's the
+- what is the
+- why
+- why is
+- why's
+- why is the
+- why's the
+- do
+- make
+- tell
+- start
+- stop
+- enable
+- disable
+- raise
+- lower
+- decrease
+- increase
+- act
+- determine
+- say
+- ask
+- go
+- shoot
+- wait
+- hang on
+- ok
+- show
+- help
+
+## intent:yes
+- yes
+- yeah
+- yep
+- sure
+- ok
+- of course
+- very well
+- fine
+- right
+- excellent
+- okay
+- perfect
+- I think so
+
+## intent:no
+- no
+- nope
+- no thanks
+- no thank you
+- negative
+- don't want to
+- don't
+- do not
+- please don't
+
+## intent:top
+- forget it
+- never mind
+- get me out of here
+- start over
+- beginning
+- never mind that
+- restart
+
+## intent:up
+- go back
+- back
+- previous
+- back to the previous
+- go to the previous
+- go back to the previous one
+
+## synonym:project:es
+- Spanish
+- es
+
+## synonym:project:sv
+- Swedish
+- sv
+
+## synonym:project:fr
+- French
+- fr
+
+## synonym:project:Saga796697
+- Saga796697
+- Saga
+
+## synonym:project:Andrea613914
+- Andrea613914
+- Andrea
+
+## synonym:project:m2v9M6iB
+- m2v9M6iB
+- testuser
+

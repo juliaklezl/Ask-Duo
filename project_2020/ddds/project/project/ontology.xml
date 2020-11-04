@@ -42,9 +42,29 @@
     <individual name= "es" sort="language"/>
     <individual name= "sv" sort="language"/>
     <individual name= "fr" sort="language"/>
+    
     <individual name= "aller" sort="w"/>
     <individual name= "je" sort="w"/>
-   
+    <individual name= "regarde" sort="w"/>
+    <individual name= "tele" sort="w"/>
+    <individual name= "lundi" sort="w"/>
+    <individual name= "soirs" sort="w"/>
+    <individual name= "joue" sort="w"/>
+    <individual name= "jour" sort="w"/>
+    <individual name= "chaque" sort="w"/>
+    <individual name= "mardi" sort="w"/>
+    
+    <individual name= "godis" sort="w"/>
+    <individual name= "hej" sort="w"/>
+    <individual name= "kalas" sort="w"/>
+    <individual name= "present" sort="w"/>
+    <individual name= "grattis" sort="w"/>
+    <individual name= "jul" sort="w"/>
+    <individual name= "inbjudan" sort="w"/>
+    <individual name= "fyrverkeri" sort="w"/>
+   <individual name= "fira" sort="w"/>
+   <individual name= "dag" sort="w"/>
+  
     
     
     

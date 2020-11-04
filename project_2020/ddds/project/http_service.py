@@ -7,7 +7,7 @@ from jinja2 import Environment
 from urllib.request import Request, urlopen
 
 import duolingo
-lingo  = duolingo.Duolingo('Julia981676', 'sprachensindschön')
+lingo  = duolingo.Duolingo('Julia981676', 'xxx')
 import datetime
 
 user = 'Julia981676'
